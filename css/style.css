@@ -62,20 +62,6 @@ header .fa-solid.fa-bars{
     width: 100%;
 }
 
-.box-get-a-demo{
-    background-color: #b5ddff;
-    border-radius: 30px;
-    padding: 35px 30px;
-    margin-bottom: 25px;
-}
-
-.box-strategic-planning{
-    background-color: white;
-    border-radius: 30px;
-    padding: 35px 30px;
-    margin: 30px;
-}
-
 /*
 --------
 Header
@@ -153,6 +139,13 @@ Main
     margin: 50px 30px 80px 30px;
 }
 
+.box-get-a-demo{
+    background-color: #b5ddff;
+    border-radius: 30px;
+    padding: 35px 30px;
+    margin-bottom: 25px;
+}
+
 #get-a-demo .col .second-col img{
     width: 100%;
     display: block;
@@ -192,6 +185,13 @@ Main
     padding: 30px;
 }
 
+.box-strategic-planning{
+    background-color: white;
+    border-radius: 30px;
+    padding: 35px 30px;
+    margin: 30px;
+}
+
 #strategic-planning .container div:first-child img{
     width: 100%;
     margin: 50px 0;
@@ -223,6 +223,38 @@ Main
 }
 /* /Strategic planning */
 
+/* Testimonials */
+#testimonials .container .header-testimonials{
+    text-align: center;
+    padding: 50px 30px;
+}
+
+#testimonials .container .header-testimonials h2{
+    margin: 30px;
+    color: #9792e4;
+}
+
+.box-testimonials{
+    background-color: #9792e4;
+    border-radius: 30px;
+    padding: 35px 30px;
+    margin: 30px;
+    text-align: center;
+}
+
+#testimonials .container .card-testimonials .col-small img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#testimonials .container .card-testimonials p{
+    color: white;
+}
+/* /Testimonials */
+
 /* da 0 a 768px */
 @media screen and (max-width: 768px) {
     #get-a-demo .container .row{
@@ -249,6 +281,17 @@ Main
 
     #get-a-demo .container .row .col .second-col{
         width: 50%;
+    }
+
+    #testimonials .container .card-testimonials{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    #testimonials .container .card-testimonials p{
+        padding-left: 40px;
     }
 }
 
@@ -285,5 +328,16 @@ Main
 
     #strategic-planning .container .box-strategic-planning{
         margin-top: 200px;
+    }
+
+    #testimonials .container .card-testimonials{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    #testimonials .container .card-testimonials p{
+        padding-left: 40px;
     }
 }
