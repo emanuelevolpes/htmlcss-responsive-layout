@@ -272,6 +272,24 @@ Main
 }
 /* /Benefits */
 
+/* About Us */
+#about-us .container{
+    padding: 30px;
+}
+
+#about-us .container .col-big p{
+    line-height: 2em;
+    margin: 50px 0;
+}
+
+#about-us .container .row .col-small img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/* /About Us */
+
 /* da 0 a 768px */
 @media screen and (max-width: 768px) {
     #get-a-demo .container .row{
@@ -321,6 +339,15 @@ Main
     #benefits .container .row .col{
         width: 45%;
         margin: 10px 10px;
+    }
+
+    #about-us .container .row{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #about-us .container .row .col-big p{
+        margin-right: 30px;
     }
 }
 
@@ -380,5 +407,14 @@ Main
     #benefits .container .row .col{
         width: 30%;
         margin: 10px 10px;
+    }
+
+    #about-us .container .row{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #about-us .container .row .col-big p{
+        margin-right: 30px;
     }
 }
