@@ -24,25 +24,49 @@ body{
     display: flex;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
 .space-between{
     justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
 }
 
 .align-center{
     align-items: center;
 }
 
+.text-align-center{
+    text-align: center;
+}
+
 ul{
     list-style: none;
 }
 
-.fa-solid.fa-bars{
+header .fa-solid.fa-bars{
     color: white;
 }
 
 .button-common{
     border: none;
     border-radius: 30px;
+}
+
+.first-col,
+.second-col{
+    width: 100%;
+}
+
+.box-get-a-demo{
+    background-color: #b5ddff;
+    border-radius: 30px;
+    padding: 35px 30px;
+    margin-bottom: 25px;
 }
 
 /*
@@ -108,5 +132,99 @@ header ul li button{
     header .container{
         max-width: 1150px;
         margin: 0 auto;
+    }
+}
+
+/*
+--------
+Main
+--------
+*/
+
+#get-a-demo{
+    margin: 50px 30px 80px 30px;
+}
+
+#get-a-demo .col .second-col img{
+    width: 100%;
+    display: block;
+    margin-bottom: -35px;
+}
+
+#get-a-demo h2,
+#get-a-demo .fa-solid{
+    color: #0084fd;
+}
+
+#get-a-demo .fa-solid{
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+#get-a-demo h2{
+    margin-bottom: 40px;
+}
+
+#get-a-demo p{
+    color: #5a6e7f;
+    line-height: 2em;
+}
+
+#get-a-demo .first-col button{
+    padding: 10px 45px;
+    background-color: #0084fd;
+    color: white;
+    margin: 35px 0;
+}
+
+/* da 0 a 768px */
+@media screen and (max-width: 768px) {
+    #get-a-demo .container .row{
+        display: block;
+    }
+}
+
+/* da 768px a 992px */
+@media screen and (min-width: 768px) {
+
+    #get-a-demo .container .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #get-a-demo .container .row .col{
+        width: 30%;
+        margin: 10px;
+    }
+
+    #get-a-demo .container .row .col:first-child{
+        width: 62.5%;
+    }
+
+    #get-a-demo .container .row .col .second-col{
+        width: 50%;
+    }
+}
+/*
+ da 992px a infinito*/
+@media screen and (min-width: 992px){
+    #get-a-demo .container .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #get-a-demo .container .row .col{
+        width: 30%;
+        margin: 10px;
+    }
+
+    #get-a-demo .container .row .col:first-child{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #get-a-demo .container .row .col .second-col,
+    #get-a-demo .container .row .col .first-col{
+        width: 50%;
     }
 }
