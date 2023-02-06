@@ -69,6 +69,13 @@ header .fa-solid.fa-bars{
     margin-bottom: 25px;
 }
 
+.box-strategic-planning{
+    background-color: white;
+    border-radius: 30px;
+    padding: 35px 30px;
+    margin: 30px;
+}
+
 /*
 --------
 Header
@@ -141,6 +148,7 @@ Main
 --------
 */
 
+/* Get a demo*/
 #get-a-demo{
     margin: 50px 30px 80px 30px;
 }
@@ -176,6 +184,44 @@ Main
     color: white;
     margin: 35px 0;
 }
+/* /Get a demo*/
+
+/* Strategic planning */
+#strategic-planning{
+    background-color: #9792e4;
+    padding: 30px;
+}
+
+#strategic-planning .container div:first-child img{
+    width: 100%;
+    margin: 50px 0;
+}
+
+#strategic-planning .container div:last-child img{
+    width: 100%;
+}
+
+#strategic-planning .container div:first-child{
+    color: white;
+}
+
+#strategic-planning .container div:first-child > h2{
+    margin-bottom: 60px;
+}
+
+#strategic-planning .box-strategic-planning p{
+    margin: 30px 0;
+    font-style: italic;
+}
+
+#strategic-planning .box-strategic-planning div .fa-solid{
+    width: 50px;
+    height: 50px;
+    background-color: #9792e4;
+    border-radius: 50%;
+    line-height: 50px;
+}
+/* /Strategic planning */
 
 /* da 0 a 768px */
 @media screen and (max-width: 768px) {
@@ -184,8 +230,8 @@ Main
     }
 }
 
-/* da 768px a 992px */
-@media screen and (min-width: 768px) {
+/* da 769px a 992px */
+@media screen and (min-width: 769px) {
 
     #get-a-demo .container .row{
         display: flex;
@@ -205,9 +251,14 @@ Main
         width: 50%;
     }
 }
-/*
- da 992px a infinito*/
+
+/* da 992px a infinito */
 @media screen and (min-width: 992px){
+    main .container{
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+
     #get-a-demo .container .row{
         display: flex;
         flex-wrap: wrap;
@@ -226,5 +277,13 @@ Main
     #get-a-demo .container .row .col .second-col,
     #get-a-demo .container .row .col .first-col{
         width: 50%;
+    }
+
+    #strategic-planning .container{
+        display: flex;
+    }
+
+    #strategic-planning .container .box-strategic-planning{
+        margin-top: 200px;
     }
 }
